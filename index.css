@@ -199,11 +199,7 @@
     }
 
     .header  ul {
-        gap: 15px;
-    }
-
-    .header button {
-        flex-direction: column;
+        gap: 5px;
     }
 
     .container {
