@@ -1,0 +1,212 @@
+:root {
+    --green-color: blue;
+    --head-size: 20px;
+    --font-size: 30px;
+    --border: 1px solid blue;
+    --background:blue;
+    --color: #fff;
+    --color-span: grey;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 16px 16px 35px 0px rgba(0, 0, 0, 0.09);
+}
+
+.header h1 {
+    font-size: var(--head-size);
+}
+
+
+.header ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+
+.header button {
+    border: var(--border);
+    color: var(--green-color);
+    font-size: var(--head-size);
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+.header button:hover {
+    color: var(--color);
+    background-color: var(--background);
+}
+
+
+.hero-container {
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.hero-container h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.hero-container p {
+    font-size: var(--head-size);
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.div1 {
+    border: 1px solid grey;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 16px 16px 35px 0px rgba(0, 0, 0, 0.09);
+    text-align: center;
+}
+
+.div1 h1 {
+    padding: 10px 30px;
+    font-size: var(--head-size);
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+.div1 h3 {
+    font-size: var(--head-size);
+    color: var(--color-span);
+}
+
+
+.div1 span {
+    font-size: var(--font-size);
+    color: black;
+}
+
+.div1 ul {
+    font-size: var(--head-size);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.div2 {
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+
+.btn {
+    border: var(--border);
+    color: var(--green-color);
+    font-size: var(--head-size);
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+.btn:hover {
+    color: var(--color);
+    background-color: var(--background);
+}
+
+
+.btn1 {
+    background-color: var(--background);
+    font-size: var(--head-size);
+    padding: 10px 30px;
+    border-radius: 7px;
+    color: var(--color);
+}
+
+.btn1:hover {
+    background-color: darkblue;
+}
+
+
+@media (max-width: 927px) {
+    .main {
+        gap: 20px;
+    }
+
+    .div2 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --head-size: 15px;
+        --font-size: 25px;
+    }
+    
+    .main {
+        gap: 7px;
+    }
+
+    .header ul {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 626px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main .div1 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    .header {
+        padding: 13px;
+    }
+
+    .header  ul {
+        gap: 15px;
+    }
+
+    .header button {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
